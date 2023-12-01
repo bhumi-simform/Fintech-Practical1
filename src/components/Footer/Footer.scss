@@ -1,0 +1,157 @@
+footer{
+   .footer-top{
+    padding: 64px 0 38px;
+    border-bottom: 1px solid rgba(255,255,255, 0.4);
+    .footer-top-wrapper{
+        display: flex;
+        .detail-block{
+            flex: 0 0 533px;
+            max-width: 533px;
+            padding-right: 80px;
+            .logo-block{
+                margin-bottom: 48px;
+                a{
+                    display: inline-block;
+                }
+                p{
+                    color: #FFF;
+                    font-weight: 400;
+                    letter-spacing: 0.36px;
+                    text-transform: capitalize;
+                    margin-top: 20px;
+                }
+            }
+            .contact-listing{
+                .ant-list-item{
+                    padding: 0;
+                    border-bottom: 0;
+                    &:not(:last-child){
+                        margin-bottom: 22px;
+                    }
+                    .contact-title{
+                        color: #FFF;
+                        font-weight: 500;
+                        font-size: 16px;
+                        font-family: 'Poppins', sans-serif;
+                        flex: 0 0 140px;
+                        max-width: 140px;
+                        .ant-image{
+                            margin-right: 10px;
+                        }
+                    }
+                    .contact-detail{
+                        flex: 0 0 calc(100% - 140px);
+                        max-width: calc(100% - 140px);
+                        padding-left: 30px;
+    
+                        address, a{
+                            color: #FFF;
+                            font-size: 14px;
+                        }
+                        address{
+                            font-style: normal;
+                        }
+                        a{
+                            transition: all 0.5s;
+                            &:hover{
+                                color: #F26440 ;
+                            }
+                        }
+                    }
+                }
+            }
+        }
+        .listing-block{
+            .listing-wrapper{
+                display: flex;
+                .listing + .listing{
+                    margin-left: 100px;
+                }
+                .list-title{
+                    font-size: 20px;
+                    font-weight: 600;
+                    line-height: 1.28;
+                    color: #FFF;
+                    margin-bottom: 20px;
+                }
+                .ant-list-item{
+                    display: block;
+                    padding: 0;
+                    border-bottom: 0;
+                    &:not(:last-child){
+                        margin-bottom: 10px;
+                    }
+                    a{
+                        display: block;
+                        color: rgb(255 255 255 / 40%);
+                        font-size: 14px;
+                        transition: all 0.5s;
+
+                        &:hover{
+                            color: #F26440;
+                        }
+                    }
+                }
+            }
+        }
+    }
+   }
+   .footer-bottom{
+    padding: 28px 0 48px;
+    .footer-bottom-wrapper{
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        .copy-right{
+            color: #FFF;
+            font-size: 12px;
+        }
+        .ant-list{
+            .ant-spin-container{
+                display: flex;
+                align-items: center;
+                .ant-list-item{
+                    padding: 0;
+                    display: block;
+                    border-bottom: 0;
+                }
+            }
+            &.terms-listing{
+                .ant-list-item + .ant-list-item{
+                    margin-left: 24px;
+                }
+                .ant-list-item{
+                    a{
+                        display: block;
+                        color: rgb(255 255 255 / 40%);
+                        font-size: 12px;
+                        transition: all 0.5s;
+                        &:hover{
+                            color: #F26440;
+                        }
+                    }
+                }
+            }
+            &.social-lisiting{
+                .ant-list-item + .ant-list-item{
+                    margin-left: 16px;
+                }
+                .ant-list-item{
+                    a{
+                        display: block;
+                        .ant-image{
+                            transition: all 0.5s;
+                        }
+
+                        &:hover{
+                            .ant-image{
+                                transform: scale(1.2);
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+   }
+}

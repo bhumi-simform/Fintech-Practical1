@@ -1,0 +1,137 @@
+*, *::before, *::after{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+html *{
+    font-family: 'Inter', sans-serif;
+    // font-family: 'Poppins', sans-serif;  
+}
+section{
+    padding: 142px 0;
+    @media(max-width:1199px){
+        padding: 90px 0; 
+    }
+}
+footer{
+    // padding: 64px 0 42px;
+    background-color: #0F3141;
+    color: #FFF;
+    // @media(max-width:1199px){
+    //     padding: 50px 0 35px; 
+    // }
+}
+.container{
+    max-width: 1300px;
+    margin: 0 auto;
+    padding: 0 50px;
+
+    @media(max-width:1199px){
+        padding: 0 25px;
+    }
+}
+img{
+    vertical-align: middle;
+    display: inline-block;
+    height: auto;
+    max-width: 100%;
+    border: 0;
+}
+//typography
+h1{
+    color: #000;
+    font-size: 88px;
+    font-weight: 600;
+    line-height: 1.06;
+    letter-spacing: -2.64px;
+    font-family: 'Poppins', sans-serif;  
+    @media(max-width:1199px){
+        font-size: 66px;
+    }
+}
+h2{
+    color: #000;
+    font-size: 60px;
+    font-weight: 600;
+    line-height: 1.06;
+    letter-spacing: -1.8px;
+    font-family: 'Poppins', sans-serif;  
+    @media(max-width:1199px){
+        font-size: 50px;
+    }
+    @media(max-width:767px){
+        font-size: 40px;
+    }
+}
+h3{
+    color: #000;
+    font-size: 24px;
+    font-weight: 600;
+    line-height: 1.4; 
+    letter-spacing: -0.48px;
+    font-family: 'Poppins', sans-serif;  
+
+    @media(max-width:1199px){
+        font-size: 22px;
+    }
+    @media(max-width:767px){
+        font-size: 20px;
+    }
+}
+p{
+    color: #000;
+    font-size: 18px;
+    font-weight: 500;
+    line-height: 1.06;
+}
+//button
+.btn{
+    height: 56px;
+    padding: 0 28px;
+    font-size: 16px;
+    font-weight: 700;
+    line-height: 56px;
+    border-radius: 4px;
+    box-shadow: none;
+    text-transform: capitalize;
+
+    border: none;
+    background: linear-gradient(95deg, #F26440 -23.03%, #EF7D60 122.53%);
+    color: #fff;
+    transition: all 0.5s;
+    &:hover{
+        background: #0F3141;
+        color:#fff !important;
+    }
+    &.rounded-btn{
+        border-radius: 80px;
+        background: #F16F4F;
+        &:hover{
+            background: #0F3141;
+            color:#fff !important;
+        }
+    }
+    &.has-arrow{
+        padding-right: 64px;
+        &:hover{
+            &:after{
+                right: 10px;
+            }
+        }
+        &:after{
+            position: absolute;
+            content: " ";
+            height: 32px;
+            width: 32px;
+            top: 50%;
+            transform: translateY(-50%);
+            background-color: #C4C4C433;
+            border-radius: 50%;
+            background-image: url(../images/right-white-arrow.svg);
+            background-repeat: no-repeat;
+            background-position: center;
+            right: 16px;
+            transition: all 0.5s;
+        }
+    }
+}

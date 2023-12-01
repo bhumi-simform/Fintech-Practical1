@@ -1,0 +1,102 @@
+.sofa-product-section{
+    background-image: url('../../assets/images/product-bg-image.jpg');
+    background-repeat: no-repeat;
+    background-position: top;
+    background-size: cover;
+    .content-wrapper{
+        max-width: 645px;
+        .title-top{
+            color: #F17252;
+            font-size: 20px;
+            line-height: 1.25;
+            font-weight: 600;
+            text-transform: capitalize;
+            margin-bottom: 20px;
+            letter-spacing: -0.4px;
+        }
+        h2{
+            margin-bottom: 30px;
+        }
+        p{
+            &:not(.title-top){
+                color: rgba(0,0,0,0.5);
+                letter-spacing: 0.18px;
+                line-height: 1.5;
+            }
+        }
+        .radio-wrapper{
+            margin-top: 30px;
+            .radio-label{
+                color: #000;
+                font-weight: 500;
+                margin-bottom: 15px;
+            }
+            .ant-radio-wrapper{
+                &.dark-green-bg{
+                    .ant-radio{
+                        background-color: #355655;
+                    }
+                }
+                &.orange-bg{
+                    .ant-radio{
+                        background-color: #F26947;
+                    }
+                }
+                &.light-brown-bg{
+                    .ant-radio{
+                        background-color: #CA8152;
+                    }
+                }
+                &.cream-bg{
+                    .ant-radio{
+                        background-color: #EBC5AD;
+                    }
+                }
+                &.black-bg{
+                    .ant-radio{
+                        background-color: #292928;
+                    }
+                }
+                .ant-radio{
+                    height: 24px;
+                    width: 24px;
+                    border-radius: 50%;
+                    border: 0;
+                    position: relative;
+                    background: red;
+                    &.ant-radio-checked{
+                        &::after{
+                            border-color: transparent;
+                        }
+                        .ant-radio-inner{
+                            background-color: transparent;
+                            border-color: #FFF;
+                            opacity: 1;
+                            visibility: visible;
+                        }
+                    }
+                    .ant-radio-inner{
+                        left: 8px;
+                        top: 4px;
+                        background-color: transparent;
+                        border-color: #FFF;
+                        width: 7px;
+                        height: 13px;
+                        border-width: 0 2px 2px 0;
+                        transform: rotate(45deg);
+                        border-radius: 0;
+                        opacity: 0;
+                        visibility: hidden;
+                        &::after{
+                            display: none;
+                        }
+                    }
+                }
+            }
+            .ant-btn{
+                display: block;
+                margin-top: 50px;
+            }
+        }
+    }
+}

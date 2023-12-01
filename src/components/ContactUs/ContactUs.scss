@@ -1,0 +1,42 @@
+.contact-us-section{
+    background-image: url('../../assets/images/details-bg-image.jpg');
+    background-repeat: no-repeat;
+    background-position: top;
+    background-size: cover;
+    .content-wrapper{
+        max-width: 800px;
+        @media(max-width:1199px){
+            max-width: 660px;
+        }
+        h2{
+            margin-bottom: 20px;
+            line-height: 1.08;
+            span{
+                display: block;
+            }
+        }
+        p{
+            color: rgba(0,0,0,0.5);
+            line-height: 1.5;
+            font-size: 20px;
+        }
+        .link-wrapper{
+            margin-top: 60px;
+            .btn{
+                margin-right: 25px;
+            }
+            a{
+                font-size: 20px;
+                text-decoration: underline;
+                color: rgba(0,0,0,0.5);
+                text-transform: capitalize;
+                font-family: 'Poppins', sans-serif;
+                transition: all 0.5s;
+                &:hover{
+                    color: #0F3141;
+                    text-decoration: none;
+                }
+            }
+        }
+    }
+}
